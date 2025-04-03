@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Work Sans' sans-serif
+}
+
 
 @tailwind base;
 @tailwind components;
@@ -16,13 +23,13 @@
         @apply  px-6 py-3  font-bold rounded-sm uppercase relative tag-tri;
     }
     .img{
-      @apply mx-auto mt-8;
+      @apply mx-auto mt-8 ;
     }
     .p{
-      @apply sm:text-[24px] sm:leading-[20px] text-[19px]  font-medium;
+      @apply sm:text-[18px] sm:leading-[20px] text-[16px]  ;
     }
     .heading {
-        @apply  bg-none px-6 py-3  font-bold text-black sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
+        @apply  bg-none  font-bold text-black sm:text-[40px] sm:leading-[64px] text-[36px] leading-[46px]  text-center my-5;
     }
     .container {
       @apply bg-[#FFEAFA] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl mx-auto mt-8 px-8 py-4 grid gap-3 border-2 border-[#8A226F] rounded-sm rounded-[10px] ;
@@ -85,9 +92,41 @@
         @apply text-[grey] ;
       }
 
-      input{
-        @apply mt-5 grid  grid-cols-3  gap-3 py-2;
+       
+      .draft{
+        @apply bg-[white] w-fit text-[grey] px-3  ml-3 border border-[2px] rounded-full;
       }
+      .prev{
+        @apply float-right -mt-7 mr-5;
+      }
+      label{
+        @apply  text-[17px] font-medium;
+      }
+     
+      .hr{
+        @apply mt-3;
+      }
+      .hr1{
+        @apply mt-10 w-full  px-0;
+      }
+      .btn2{
+        @apply bg-[#F7F7F7] flex gap-2 text-center items-center py-3 rounded-full text-[#8A226F] font-[500] mt-4;
+        
+      }
+      .check{
+        @apply  appearance-none h-5 w-5 border-2 rounded-md bg-white checked:bg-[#8A226F]  float-right -mt-6 cursor-pointer;
+      }
+      .save{
+        @apply text-white  w-full rounded-full;
+      }
+      .cancel{
+        @apply text-[#8A226F] border border-2 border-[#8A226F] w-full rounded-full font-medium text-[17px];
+      }
+      .btn1-flex{
+        @apply flex mt-4 px-3 gap-2 ;
+      }
+     
+
      
       
     

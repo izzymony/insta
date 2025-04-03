@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default function Home() {
+export default function Home( ) {
   return (
     <main>
-      <img src="/Shopping Sale.svg " alt="" className="img mt-auto flex" />
+      <img src="/Shopping Sale (1).svg " alt="" className="img mt-auto flex" />
 
-      <img src="/Sale.svg" alt=""  className="img"/>
-      <h1 className="heading text-center">Welcome</h1>
+     
+      <h1 className="healding text-center">Welcome</h1>
       <p className="p text-center">The safest platform to shop from social media vendors</p>
       <div className="container">
         <div className="flex">
@@ -38,6 +38,7 @@ export default function Home() {
       <Link href={"/Formpage"}>
   <button className="btn">Get started</button>
 </Link>
+
     </main>
   );
 }

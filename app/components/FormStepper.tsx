@@ -24,18 +24,24 @@ const steps = [
 in React using TypeScript. Inside this component: */
 const Stepper: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
-  const router = useRouter();
-  console.log(router);
+  const router = useRouter(); 
+
+
  
  /**
   * The functions `handleNext` and `handlePrev` are used to navigate to the next and previous steps in
   * a multi-step process, respectively.
   */
   const handleNext = () => {
-    if (currentStep < steps.length - 1) {
+    if (currentStep < steps.length - 1) 
+      {
       setCurrentStep(currentStep + 1);
-    } else{
-      router.push('./Createnew/create.tsx');
+
+      
+    } else {
+      console.log("Navigating to /Createnew/create");
+      // Navigate to another page when the last step is reached
+      router.push(`/Createnew/create`); // Use router.push for navigation
     }
   };
 
@@ -114,8 +120,8 @@ const Stepper: React.FC = () => {
       
       <div className='mt-60'>
       <button
-          onClick={handleNext}
-          disabled={currentStep === steps.length -1}
+          onClick={handleNext }
+        
           className={`btn1  px-4 py-2 rounded ${
             currentStep === steps.length - 1 
             
