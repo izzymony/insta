@@ -42,7 +42,7 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ productsData }) => {
                   <div className='bg-[#d3d3d3] text-black w-fit px-3 rounded-full'>Filter</div>
                 </div>
                 <p className='text-[10px]-500 mt-3'>Color: WHITE</p>
-                <div className='grid grid-cols-5 gap-4 mt-1 px-4 w-fit'>
+              <div className='grid grid-cols-5 gap-4 mt-1 px-4 w-fit'>
                   <div className='bg-black text-white w-fit px-3 rounded-full'>Filter</div>
                   <div className='bg-[#d3d3d3] text-black w-fit px-3 rounded-full'>Filter</div>
                   <div className='bg-[#d3d3d3] text-black w-fit px-3 rounded-full'>Filter</div>
