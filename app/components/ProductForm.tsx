@@ -2,6 +2,7 @@
 
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 import Link from 'next/link';
 const ProductForm: React.FC = () => {  
@@ -10,13 +11,13 @@ const ProductForm: React.FC = () => {
     <div>
     <main className=''>
         <div className='flex mt-5 '>
-            <img src="/Icon button 1.svg" alt="" />
+            <Image src="/Icon button 1.svg" alt="" />
             <p className="p1 mt-1 ">Create a product</p>
         </div>
         <div className='mt-3'>
             <div className='draft bg-red w-3 flex '>
                 <p>Draft</p>
-                <img src="/check.svg" alt="" className='float-right ml-2' />
+                <Image src="/check.svg" alt="" className='float-right ml-2' />
             </div>
             <span className='prev text-[#8A226F] font-[500] '>Preview product</span>
         </div>
@@ -56,12 +57,12 @@ placeholder="Inventory stocks"
 <section className='mt-4'>
 <div className=''>
 <label htmlFor="">Product Image</label>
-<img src="/chevron_down.svg" alt=""  className='float-right mt-1'/>
+<Image src="/chevron_down.svg" alt=""  className='float-right mt-1'/>
 </div>
 <div className='btn2'>
 <div className='text-center flex gap-1 mx-auto'>
 Add image
-<img src="/add_photo_alternate.svg" alt="" />
+<Image src="/add_photo_alternate.svg" alt="" />
 </div>
 
 </div>
@@ -89,7 +90,7 @@ Add image
 <div>
 <div>
 <label htmlFor="" >Shipping</label>
-<img src="/chevron_down.svg" alt=""className='float-right mt-1' />
+<Image src="/chevron_down.svg" alt=""className='float-right mt-1' />
 </div>
 <div className=''>
 <div className='mt-6'>Self shipping</div>

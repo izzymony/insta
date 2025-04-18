@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-
+import Image from 'next/image';
 
 const steps = [
   {
@@ -55,7 +55,7 @@ const Stepper: React.FC = () => {
     
 <main>
 <div className="get-started flex mt-7">
-    <img src="/Icon button 1.svg" alt=""  onClick={handlePrev}
+    <Image src="/Icon button 1.svg" alt=""  onClick={handlePrev}
        
           className={`${
             currentStep === 0
@@ -91,9 +91,9 @@ const Stepper: React.FC = () => {
         
           <form>
             <div className='imbg grid grid-cols-3 gap-4 place-items-center mt-4  '>
-            <img src="/Frame 1000006978 (1).svg" alt="" />
-            <img src="/Frame 1000006978 (5).svg" alt="" />
-            <img src="/Frame 1000006978 (6).svg" alt="" />
+            <Image src="/Frame 1000006978 (1).svg" alt="" />
+            <Image src="/Frame 1000006978 (5).svg" alt="" />
+            <Image src="/Frame 1000006978 (6).svg" alt="" />
             </div>
             <p className='content'> Or enter manually</p>
             <input type="text" placeholder="Full name" className="border p-2 mt-4 w-full  py-4  placeholder:text-black rounded-[10px]" />
@@ -104,7 +104,7 @@ const Stepper: React.FC = () => {
         )}
         {currentStep === 2 && (
           <form className=''>
-            <div className='border rounded-[10px] bg-red w-full  mt-3 py-10'><img src="/Group 1000006290.svg" alt="" className='-mt-4 item-center grid flex mx-auto' /><h1 className='sp mt-1'> Upload store logo</h1></div>
+            <div className='border rounded-[10px] bg-red w-full  mt-3 py-10'><Image src="/Group 1000006290.svg" alt="" className='-mt-4 item-center grid flex mx-auto' /><h1 className='sp mt-1'> Upload store logo</h1></div>
             <div className='py-3'>
             <input type="text" placeholder="Store name" className="border p-4 mt-2 w-full py-4 rounded-[10px] placeholder:text-black " />
             <input type="text" placeholder="Store tag name" className="border p-4 mt-2 w-full py-4 rounded-[10px]  placeholder:text-black" />

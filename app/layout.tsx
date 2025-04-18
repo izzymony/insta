@@ -37,7 +37,7 @@ const workSans = localFont({
       style: 'normal',
     },
     {
-      path: './fonts/WorkSans-thin.ttf',
+      path: './fonts/WorkSans-Thin.ttf',
       weight: '200',
       style: 'normal',
     },

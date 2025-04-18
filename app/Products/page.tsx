@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 interface Product {
   id: number;
   title: string;
@@ -70,7 +72,7 @@ const ProductsPage: React.FC = () => {
             <div className="px-6">
               <h2 className="text-[19px] mt-6 font-bold">About this vendor</h2>
               <div className="flex">
-                <img src="/Group 1000006290.svg" alt="" className="mt-4" />
+                <Image src="/Group 1000006290.svg" alt="" className="mt-4" />
                 <h2 className="text-black text-[19px]-600 font-medium mt-6">About vendor</h2>
               </div>
               <p className="#ACACAC">
