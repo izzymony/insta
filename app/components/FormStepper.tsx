@@ -55,7 +55,7 @@ const Stepper: React.FC = () => {
     
 <main>
 <div className="get-started flex mt-7">
-    <Image src="/Icon button 1.svg" alt="" width={11} height={11}  onClick={handlePrev}
+    <Image src="/Icon button 1.svg" alt="" width={34} height={34}  onClick={handlePrev}
        
           className={`${
             currentStep === 0
